@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+      <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/logo/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/logo//site.webmanifest">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Radnet Telecom</title>
+
+    <link href="estilo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e49bfe124.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="container-aplicacao">
+
+        <div class="container-aplicacao-titulo">
+            <h2>Simulador de Plano Ideal </h2>
+            <p>algumas informações para saber seu plano ideal.</p>
+        </div>
+
+        <div class="container-aplicacao-etapas">
+
+            <div class="container-aplicacao-etapa1" id="dispositivos">
+                <h3>dispositivos</h3>
+
+            </div>
+            <div class="container-aplicacao-etapa2" id="servicos">
+                <h3>serviços</h3>
+
+            </div>
+            <div class="container-aplicacao-etapa3" id="resultado">
+                <h3>resultado</h3>
+
+            </div>
+
+        </div>
+
+        <div class="container-aplicacao-tela">
+            <div class="qtd-titulo1" id="dispositivos-titulo">
+                <h3>Informe abaixo a quantidade total dos dispositivos que irão compartilhar a conexão neste endereço</h3>
+            </div>
+
+            <div class="qtd-dispositivos" id="dispositivos-conteudo">
+
+
+                <div class="local-card">
+                    <div class="card1">
+                        <div class="icon1">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-mobile-alt"></i></span>
+                        </div>
+                        <label>Celular(es)<input type="number" class="input-qtd" id="input-cel" min="0" max="10" value="0"><br></label>
+                    </div>
+                </div>
+
+
+                <div class="local-card">
+                    <div class="card1">
+                        <div class="icon1">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-laptop"></i>     </span>
+                        </div>
+                        <label>Notebook(s)<input type="number" class="input-qtd" id="input-not" min="0" max="10" value="0"><br></label>
+                    </div>
+                </div>
+
+                <div class="local-card">
+                    <div class="card1">
+                        <div class="icon1">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-tablet-alt"></i>     </span>
+                        </div>
+                        <label>tablet(s)<input type="number" class="input-qtd" id="input-tab" min="0" max="10" value="0"><br></label>
+                    </div>
+                </div>
+
+                <div class="local-card">
+                    <div class="card1">
+                        <div class="icon1">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-tv"></i>     </span>
+                        </div>
+                        <label>SmartTV(s)<input type="number" class="input-qtd" id="input-stv" min="0" max="10" value="0"><br></label>
+                    </div>
+                </div>
+
+                <div class="local-card">
+                    <div class="card1">
+                        <div class="icon1">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-tv"></i>     </span>
+                        </div>
+                        <label>SmartTV 4K(s)<input type="number" class="input-qtd" id="input-st4"min="0" max="10" value="0"><br></label>
+                    </div>
+                </div>
+
+                <div class="local-card">
+                    <div class="card1">
+                        <div class="icon1">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-video"></i>     </span>
+                        </div>
+                        <label>Camera(s)<input type="number" class="input-qtd" id="input-cam" min="0" max="10" value="0"><br></label>
+                    </div>
+                </div>
+
+                <div class="local-card">
+                    <div class="card1">
+                        <div class="icon1">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-gamepad"></i>     </span>
+                        </div>
+                        <label>VideoGame(s) <input type="number" class="input-qtd" id="input-vig" min="0" max="10" value="0"><br></label>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="qtd-titulo2" id="servicos-titulo">
+                <h3>Marque um ou mais serviços que serão utilizados</h3>
+            </div>
+            <div class="servicos" id="servicos-conteudo">
+
+                <div class="local-card2">
+                    <div class="card2">
+                        <div class="icon2" id="te" onclick="selecionar(this.id)">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204);"><i class="fas fa-mail-bulk" id="teIcon"></i>     </span>
+                        </div>
+                        <label>TROCA DE EMAILS</label>
+                    </div>
+
+                </div>
+
+
+                <div class="local-card2">
+                    <div class="card2">
+                        <div class="icon2" id="rs" onclick="selecionar(this.id)">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-comments" id="rsIcon"></i>     </span>
+                        </div>
+                        <label>REDES SOCIAIS</label>
+                    </div>
+                </div>
+
+                <div class="local-card2">
+                    <div class="card2">
+                        <div class="icon2" id="hp" onclick="selecionar(this.id)">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-headphones" id="hpIcon"></i>     </span>
+                        </div>
+                        <label>MUSICAS</label>
+                    </div>
+                </div>
+
+                <div class="local-card2">
+                    <div class="card2">
+                        <div class="icon2" id="fv" onclick="selecionar(this.id)">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-file-video" id="fvIcon"></i>     </span>
+                        </div>
+                        <label>SISTEMA DE VIGILÂNCIA</label>
+                    </div>
+                </div>
+
+                <div class="local-card2">
+                    <div class="card2">
+                        <div class="icon2" id="dc" onclick="selecionar(this.id)">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-dice" id="dcIcon"></i>     </span>
+                        </div>
+                        <label>JOGOS</label>
+                    </div>
+                </div>
+
+                <div class="local-card2">
+                    <div class="card2">
+                        <div class="icon2" id="fm" onclick="selecionar(this.id)">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-film" id="fmIcon"></i>     </span>
+                        </div>
+                        <label>FILMES E SÉRIES</label>
+                    </div>
+                </div>
+
+                <div class="local-card2">
+                    <div class="card2">
+                        <div class="icon2" id="vd" onclick="selecionar(this.id)">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-video" id="vdIcon"></i>     </span>
+                        </div>
+                        <label>LIVE / STREAMER</label>
+                    </div>
+                </div>
+
+                <div class="local-card2">
+                    <div class="card2">
+                        <div class="icon2" id="dl" onclick="selecionar(this.id)">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-download" id="dlIcon"></i>     </span>
+                        </div>
+                        <label>DOWNLOADS LEVES</label>
+                    </div>
+                </div>
+
+                <div class="local-card2">
+                    <div class="card2">
+                        <div class="icon2" id="dm" onclick="selecionar(this.id)">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-file-download" id="dmIcon"></i>     </span>
+                        </div>
+                        <label>DOWNLOADS MÉDIOS</label>
+                    </div>
+                </div>
+
+                <div class="local-card2">
+                    <div class="card2">
+                        <div class="icon2" id="dp" onclick="selecionar(this.id)">
+                            <span style="font-size: 3em; color: rgb(204, 204, 204); "><i class="fas fa-cloud-download-alt" id="dpIcon"></i>     </span>
+                        </div>
+                        <label>DOWNLOADS PESADOS</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="resultado-titulo" id="result-t">
+                <h3>O Plano ideal para sua necessidade é: </h3>
+            </div>
+            <div class="resultado-conteudo" id="result-c">
+                <div class="resultado-card">
+
+                    <z id="quantidade"></z>
+                </div>
+            </div>
+            <div>
+                <a href="../index.html"><input type="button" value="VOLTAR AO SITE" id="voltarSite" class="btn" style="background-color: rgb(255, 102, 0);" onmouseover="CSVoltarSite()" onmouseout="SSVoltarSite()"></a>
+                <input type="button" value="VOLTAR" id="voltar" class="btn" onclick="ocultarMostrar(this.id)" onmouseover="CSVoltar()" onmouseout="SSVoltar()">
+                <input type="button" value="CONTINUAR" id="continuar" class="btn-next" onclick="ocultarMostrar(this.id)" onmouseover="CSContinuar()" onmouseout="SSContinuar()">
+            </div>
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>

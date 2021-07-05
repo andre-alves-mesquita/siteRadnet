@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 102, 0);
+    /*background-image: linear-gradient(to right top, rgb(8, 6, 165), rgb(255, 102, 0));*/
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-aplicacao {
+    margin-top: 60px;
+    position: relative;
+    width: 1200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.container-aplicacao-titulo {
+    text-align: center;
+    padding: 15px;
+}
+
+.container-aplicacao-etapas {
+    display: flex;
+    align-items: center;
+}
+
+
+/*
+.container-aplicacao-etapa1 {
+    width: 600px;
+    height: 40px;
+    background-color: #ECEEEF;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+*/
+
+.container-aplicacao-etapa1 {
+    width: 400px;
+    height: 40px;
+    background-color: #ECEEEF;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    /*acributos editados*/
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    z-index: 1;
+    background-color: #00BCD4;
+    border-radius: 6px;
+    box-shadow: 0 16px 26px -10px rgb(0 188 212 / 56%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 188 212 / 20%);
+}
+
+.container-aplicacao-etapa2 {
+    width: 400px;
+    height: 40px;
+    background-color: #ECEEEF;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.container-aplicacao-etapa3 {
+    width: 400px;
+    height: 40px;
+    background-color: #ECEEEF;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.container-aplicacao-tela {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qtd-titulo1 {
+    margin-top: 20px;
+    /*display: none;*/
+    margin-bottom: 40px;
+    /*display: none;*/
+}
+
+.qtd-dispositivos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*display: none;*/
+}
+
+.qtd-titulo2 {
+    margin-bottom: 40px;
+    display: none;
+}
+
+.servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    display: none;
+}
+
+.btn {
+    background-color: #999999;
+    width: 140px;
+    height: 50px;
+    border-radius: 7px;
+    color: aliceblue;
+    font-size: 15px;
+    border: 0;
+}
+
+.btn-next {
+    background-color: #4CAF50;
+    width: 140px;
+    height: 50px;
+    border-radius: 7px;
+    color: aliceblue;
+    font-size: 15px;
+    border: 0;
+}
+
+.local-card {
+    margin-bottom: 40px;
+}
+
+.local-card2 {
+    margin-bottom: 0px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.icon1 {
+    border: 4px solid #CCCCCC;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.icon2 {
+    border: 4px solid #CCCCCC;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin: 5px;
+}
+
+.input-qtd {
+    width: 80px;
+    margin-left: 5px;
+}
+
+.resultado-titulo {
+    margin-bottom: 40px;
+    display: none;
+}
+
+.resultado-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    display: none;
+}
+
+.resultado-card {
+    background-color: red;
+    color: aliceblue;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width:1220px) {
+    .container-aplicacao {
+        width: 600px;
+        display: flex;
+    }
+    .container-aplicacao-tela {
+        display: flex;
+    }
+    .container-aplicacao-etapas {
+        position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+        top: 0;
+        flex-direction: column;
+        /*
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        */
+    }
+    .container-aplicacao-etapa1,
+    .container-aplicacao-etapa2,
+    .container-aplicacao-etapa3 {
+        display: flex;
+        width: 600px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 1px;
+    }
+    .qtd-dispositivos {
+        display: flex;
+        flex-direction: column;
+    }
+    .qtd-titulo1 {
+        width: 600px;
+        margin-top: 20px;
+        /*display: none;*/
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .qtd-dispositivos {
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /*display: none;*/
+    }
+    .qtd-titulo2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        display: none;
+    }
+    .servicos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 600px;
+        display: none;
+    }
+}
